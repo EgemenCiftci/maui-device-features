@@ -1,0 +1,17 @@
+<Shell
+    x:Class="MauiDeviceFeatures.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:MauiDeviceFeatures.Views"
+    Shell.FlyoutBehavior="Locked">
+
+    <ShellContent Title="Battery" ContentTemplate="{DataTemplate views:BatteryPage}" Route="BatteryPage" />
+    <ShellContent Title="Device Display" ContentTemplate="{DataTemplate views:DeviceDisplayPage}" Route="DeviceDisplayPage" />
+    <ShellContent Title="Device Information" ContentTemplate="{DataTemplate views:DeviceInformationPage}" Route="DeviceInformationPage" />
+    <ShellContent Title="Device Sensors" ContentTemplate="{DataTemplate views:DeviceSensorsPage}" Route="DeviceSensorsPage" />
+    <ShellContent Title="Flashlight" ContentTemplate="{DataTemplate views:FlashlightPage}" Route="FlashlightPage" />
+    <ShellContent Title="Geocoding" ContentTemplate="{DataTemplate views:GeocodingPage}" Route="GeocodingPage" />
+    <ShellContent Title="Geolocation" ContentTemplate="{DataTemplate views:GeolocationPage}" Route="GeolocationPage" />
+    <ShellContent Title="Haptic Feedback" ContentTemplate="{DataTemplate views:HapticFeedbackPage}" Route="HapticFeedbackPage" />
+    <ShellContent Title="Vibration" ContentTemplate="{DataTemplate views:VibrationPage}" Route="VibrationPage" />
+</Shell>
