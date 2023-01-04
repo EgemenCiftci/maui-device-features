@@ -1,41 +1,28 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:MauiDeviceFeatures.ViewModels"
              x:Class="MauiDeviceFeatures.Views.BatteryPage" 
+             x:DataType="viewModels:BatteryPageViewModel"
              Title="Battery">
-
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
-
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
-        </VerticalStackLayout>
-    </ScrollView>
-
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Text="Charge Level" FontAttributes="Bold"/>
+        <Label Grid.Row="0" Grid.Column="1" Text="{Binding ChargeLevel}" Margin="10,0,0,0"/>
+        <Label Grid.Row="1" Grid.Column="0" Text="Energy Saver Status" FontAttributes="Bold"/>
+        <Label Grid.Row="1" Grid.Column="1" Text="{Binding EnergySaverStatus}" Margin="10,0,0,0"/>
+        <Label Grid.Row="2" Grid.Column="0" Text="Power Source" FontAttributes="Bold"/>
+        <Label Grid.Row="2" Grid.Column="1" Text="{Binding PowerSource}" Margin="10,0,0,0"/>
+        <Label Grid.Row="3" Grid.Column="0" Text="State" FontAttributes="Bold"/>
+        <Label Grid.Row="3" Grid.Column="1" Text="{Binding State}" Margin="10,0,0,0"/>
+    </Grid>
 </ContentPage>
