@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:MauiDeviceFeatures.ViewModels"
@@ -24,11 +23,11 @@
         <Label Grid.Row="0" Grid.Column="1" Text="{Binding Density}" Margin="10,0,0,0"/>
         <Label Grid.Row="1" Grid.Column="0" Text="Height" FontAttributes="Bold"/>
         <Label Grid.Row="1" Grid.Column="1" Text="{Binding Height}" Margin="10,0,0,0"/>
-        <Label Grid.Row="2" Grid.Column="0" Text="KeepScreenOn" FontAttributes="Bold"/>
+        <Label Grid.Row="2" Grid.Column="0" Text="Keep Screen On" FontAttributes="Bold"/>
         <Label Grid.Row="2" Grid.Column="1" Text="{Binding KeepScreenOn}" Margin="10,0,0,0"/>
         <Label Grid.Row="3" Grid.Column="0" Text="Orientation" FontAttributes="Bold"/>
         <Label Grid.Row="3" Grid.Column="1" Text="{Binding Orientation}" Margin="10,0,0,0"/>
-        <Label Grid.Row="4" Grid.Column="0" Text="RefreshRate" FontAttributes="Bold"/>
+        <Label Grid.Row="4" Grid.Column="0" Text="Refresh Rate" FontAttributes="Bold"/>
         <Label Grid.Row="4" Grid.Column="1" Text="{Binding RefreshRate}" Margin="10,0,0,0"/>
         <Label Grid.Row="5" Grid.Column="0" Text="Rotation" FontAttributes="Bold"/>
         <Label Grid.Row="5" Grid.Column="1" Text="{Binding Rotation}" Margin="10,0,0,0"/>

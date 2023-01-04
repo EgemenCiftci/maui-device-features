@@ -1,9 +1,13 @@
+using MauiDeviceFeatures.ViewModels;
+
 namespace MauiDeviceFeatures.Views;
 
 public partial class DeviceSensorsPage : ContentPage
 {
-	public DeviceSensorsPage()
+	public DeviceSensorsPage(DeviceSensorsPageViewModel viewModel)
 	{
 		InitializeComponent();
+
+		BindingContext = viewModel;
 	}
 }

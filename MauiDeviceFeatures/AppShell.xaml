@@ -3,7 +3,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:MauiDeviceFeatures.Views"
-    Shell.FlyoutBehavior="Locked" Shell.FlyoutWidth="200">
+    Shell.FlyoutBehavior="Flyout" Shell.FlyoutWidth="200">
 
     <ShellContent Title="Battery" ContentTemplate="{DataTemplate views:BatteryPage}" Route="BatteryPage" />
     <ShellContent Title="Device Display" ContentTemplate="{DataTemplate views:DeviceDisplayPage}" Route="DeviceDisplayPage" />

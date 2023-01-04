@@ -8,6 +8,6 @@ public partial class DeviceDisplayPage : ContentPage
 	{
 		InitializeComponent();
 
-        BindingContext = viewModel;
-    }
+		BindingContext = viewModel;
+	}
 }

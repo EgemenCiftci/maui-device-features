@@ -8,7 +8,7 @@ public partial class BatteryPage : ContentPage
 	{
 		InitializeComponent();
 
-        BindingContext = viewModel;
-    }
+		BindingContext = viewModel;
+	}
 }
 

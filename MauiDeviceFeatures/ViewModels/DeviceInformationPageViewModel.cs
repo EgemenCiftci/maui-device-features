@@ -1,13 +1,23 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MauiDeviceFeatures.ViewModels
 {
     public class DeviceInformationPageViewModel : ObservableObject
     {
+        public string DeviceType => DeviceInfo.Current.DeviceType.ToString();
+
+        public string Idiom => DeviceInfo.Current.Idiom.ToString();
+
+        public string Manufacturer => DeviceInfo.Current.Manufacturer;
+
+        public string Model => DeviceInfo.Current.Model;
+
+        public string Name => DeviceInfo.Current.Name;
+
+        public string Platform => DeviceInfo.Current.Platform.ToString();
+
+        public string Version => DeviceInfo.Current.Version.ToString();
+
+        public string VersionString => DeviceInfo.Current.VersionString;
     }
 }
