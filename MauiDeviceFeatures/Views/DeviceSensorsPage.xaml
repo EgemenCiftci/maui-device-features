@@ -4,7 +4,7 @@
              x:Class="MauiDeviceFeatures.Views.DeviceSensorsPage"
              x:DataType="viewModels:DeviceSensorsPageViewModel"
              Title="Device Sensors">
-    <Grid>
+    <Grid Padding="10,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>

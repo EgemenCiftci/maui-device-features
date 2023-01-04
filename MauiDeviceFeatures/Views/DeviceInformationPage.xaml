@@ -4,7 +4,7 @@
              x:Class="MauiDeviceFeatures.Views.DeviceInformationPage"
              x:DataType="viewModels:DeviceInformationPageViewModel"
              Title="Device Information">
-    <Grid>
+    <Grid Padding="10,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
