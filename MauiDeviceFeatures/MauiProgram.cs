@@ -16,6 +16,10 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             })
+            .ConfigureEssentials(async essentials =>
+            {
+                essentials.UseMapServiceToken(await SecureStorage.Default.GetAsync("mapServiceToken"));
+            })
             .RegisterAppServices()
             .RegisterViewModels()
             .RegisterViews()
