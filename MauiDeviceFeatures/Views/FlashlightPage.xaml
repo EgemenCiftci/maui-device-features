@@ -4,5 +4,5 @@
              x:Class="MauiDeviceFeatures.Views.FlashlightPage"
              x:DataType="viewModels:FlashlightPageViewModel"
              Title="Flashlight">
-    <Switch IsToggled="{Binding IsToggled}" VerticalOptions="Start" Margin="10,0,0,0"/>
+    <Switch IsToggled="{Binding IsToggled}" VerticalOptions="Start" Margin="10,0"/>
 </ContentPage>
