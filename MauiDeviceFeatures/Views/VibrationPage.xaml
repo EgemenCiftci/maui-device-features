@@ -4,5 +4,5 @@
              x:Class="MauiDeviceFeatures.Views.VibrationPage"
              x:DataType="viewModels:VibrationPageViewModel"
              Title="Vibration">
-    <Button Text="Vibrate" Command="{Binding VibrateCommand}" VerticalOptions="Start" Margin="10,0"/>
+    <Button Text="Vibrate" Command="{Binding VibrateCommand}" VerticalOptions="Start" Margin="10"/>
 </ContentPage>

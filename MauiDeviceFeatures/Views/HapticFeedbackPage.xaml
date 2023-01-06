@@ -4,7 +4,7 @@
              x:Class="MauiDeviceFeatures.Views.HapticFeedbackPage"
              x:DataType="viewModels:HapticFeedbackPageViewModel"
              Title="Haptic Feedback">
-    <VerticalStackLayout VerticalOptions="Start" Padding="10,0">
+    <VerticalStackLayout VerticalOptions="Start" Padding="10">
         <Button Text="Click Mode" Command="{Binding ClickCommand}"/>
         <Button Text="Long Press Mode" Command="{Binding LongPressCommand}"/>
     </VerticalStackLayout>
