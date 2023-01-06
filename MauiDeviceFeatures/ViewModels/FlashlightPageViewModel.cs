@@ -1,33 +1,39 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 
 namespace MauiDeviceFeatures.ViewModels
 {
     public class FlashlightPageViewModel : ObservableObject
     {
-        private bool _isToggled;
-        public bool IsToggled
+        private bool _isOn;
+
+        public bool IsOn
         {
-            get => _isToggled;
-            set
-            {
-                _ = SetProperty(ref _isToggled, value);
-                _ = ToggleAsync();
-            }
+            get => _isOn;
+            private set => SetProperty(ref _isOn, value);
         }
 
+        public IAsyncRelayCommand TurnOnOffCommand { get; }
 
-        private async Task ToggleAsync()
+        public FlashlightPageViewModel()
+        {
+            TurnOnOffCommand = new AsyncRelayCommand(TurnOnOffAsync);
+        }
+
+        private async Task TurnOnOffAsync()
         {
             try
             {
-                if (IsToggled)
-                {
-                    await Flashlight.Default.TurnOnAsync();
-                }
-                else
+                if (IsOn)
                 {
                     await Flashlight.Default.TurnOffAsync();
                 }
+                else
+                {
+                    await Flashlight.Default.TurnOnAsync();
+                }
+
+                IsOn = !IsOn;
             }
             catch (Exception ex)
             {

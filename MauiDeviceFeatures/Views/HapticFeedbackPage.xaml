@@ -6,6 +6,6 @@
              Title="Haptic Feedback">
     <VerticalStackLayout VerticalOptions="Start" Padding="10">
         <Button Text="Click Mode" Command="{Binding ClickCommand}"/>
-        <Button Text="Long Press Mode" Command="{Binding LongPressCommand}"/>
+        <Button Text="Long Press Mode" Command="{Binding LongPressCommand}" Margin="0,10,0,0"/>
     </VerticalStackLayout>
 </ContentPage>

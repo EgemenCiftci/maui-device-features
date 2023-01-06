@@ -4,5 +4,7 @@
              x:Class="MauiDeviceFeatures.Views.FlashlightPage"
              x:DataType="viewModels:FlashlightPageViewModel"
              Title="Flashlight">
-    <Switch IsToggled="{Binding IsToggled}" VerticalOptions="Start" Margin="10"/>
+    <VerticalStackLayout VerticalOptions="Start" Padding="10">
+        <Button Text="{Binding IsOn, Converter={StaticResource isOnConverter}}" Command="{Binding TurnOnOffCommand}"/>
+    </VerticalStackLayout>
 </ContentPage>

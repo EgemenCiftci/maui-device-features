@@ -18,12 +18,15 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="On Windows environment a Bing Maps API key is required to use geocoding functionality. Sign up for a free Bing Maps account. Under My account > My keys, create a new key and fill out information based on your application type, which should be Windows Application." TextColor="Yellow"/>
-        <Entry Grid.Row="1" Grid.Column="0" Text="{Binding MapServiceToken}" Placeholder="Map Service Token"/>
-        <Button Grid.Row="1" Grid.Column="1" Text="Save" Command="{Binding SaveMapServiceTokenCommand}" Margin="10,0,0,0"/>
-        <Entry Grid.Row="2" Grid.Column="0" Text="{Binding Address}" Placeholder="Address"/>
-        <Button Grid.Row="2" Grid.Column="1" Text="Get Location" Command="{Binding GetLocationCommand}" Margin="10,0,0,0"/>
-        <Entry Grid.Row="3" Grid.Column="0" Text="{Binding Latitude}" Placeholder="Latitude"/>
+
+        <Entry Grid.Row="1" Grid.Column="0" Text="{Binding MapServiceToken}" Placeholder="Map Service Token" Margin="0,10,0,0"/>
+        <Button Grid.Row="1" Grid.Column="1" Text="Save" Command="{Binding SaveMapServiceTokenCommand}" Margin="10,10,0,0"/>
+
+        <Entry Grid.Row="2" Grid.Column="0" Text="{Binding Address}" Placeholder="Address" Margin="0,10,0,0"/>
+        <Button Grid.Row="2" Grid.Column="1" Text="Get Location" Command="{Binding GetLocationCommand}" Margin="10,10,0,0"/>
+
+        <Entry Grid.Row="3" Grid.Column="0" Text="{Binding Latitude}" Placeholder="Latitude" Margin="0,10,0,0"/>
         <Entry Grid.Row="4" Grid.Column="0" Text="{Binding Longitude}" Placeholder="Longitude"/>
-        <Button Grid.Row="3" Grid.Column="1" Grid.RowSpan="2" Text="Get Placemark" Command="{Binding GetPlacemarkCommand}" Margin="10,0,0,0"/>
+        <Button Grid.Row="3" Grid.Column="1" Grid.RowSpan="2" Text="Get Placemark" Command="{Binding GetPlacemarkCommand}" Margin="10,10,0,0"/>
     </Grid>
 </ContentPage>
